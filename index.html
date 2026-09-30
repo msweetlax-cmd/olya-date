@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Little Invitation for Olya</title>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, #fff7f8, #f8eef2);
+        font-family: Georgia, serif;
+        color: #3d3033;
+        padding: 20px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 520px;
+        background: rgba(255,255,255,0.92);
+        border-radius: 24px;
+        padding: 45px 30px;
+        text-align: center;
+        box-shadow: 0 15px 45px rgba(80,40,50,0.12);
+    }
+
+    .heart {
+        font-size: 42px;
+        margin-bottom: 15px;
+    }
+
+    h1 {
+        font-size: 34px;
+        font-weight: normal;
+        margin: 0 0 20px;
+    }
+
+    .intro {
+        font-size: 19px;
+        line-height: 1.7;
+        margin-bottom: 30px;
+    }
+
+    .date-box {
+        background: #fff5f6;
+        border-radius: 16px;
+        padding: 20px;
+        margin: 25px 0;
+    }
+
+    .date-box strong {
+        display: block;
+        font-size: 21px;
+        margin-bottom: 8px;
+    }
+
+    .question {
+        font-size: 22px;
+        margin: 30px 0 20px;
+    }
+
+    button {
+        border: none;
+        border-radius: 50px;
+        padding: 15px 30px;
+        font-size: 17px;
+        cursor: pointer;
+        margin: 8px;
+        transition: transform 0.2s;
+    }
+
+    button:hover {
+        transform: scale(1.05);
+    }
+
+    .yes {
+        background: #d88a9a;
+        color: white;
+    }
+
+    .maybe {
+        background: #f1e4e7;
+        color: #5b464b;
+    }
+
+    #response {
+        display: none;
+        margin-top: 25px;
+        font-size: 19px;
+        line-height: 1.6;
+    }
+
+    .small {
+        margin-top: 30px;
+        font-size: 14px;
+        color: #8b777c;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <div class="heart">♡</div>
+
+    <h1>A Little Invitation for Olya</h1>
+
+    <div class="intro">
+        I was thinking it might be nice to spend a little time together —
+        somewhere quiet, with good conversation and no pressure.
+    </div>
+
+    <div class="date-box">
+        <strong>A date?</strong>
+        Just you and me.<br>
+        Somewhere beautiful.<br>
+        Something simple.
+    </div>
+
+    <div class="question">
+        Would you like to go on a date with me?
+    </div>
+
+    <button class="yes" onclick="sayYes()">
+        Yes ♡
+    </button>
+
+    <button class="maybe" onclick="sayMaybe()">
+        Let me think...
+    </button>
+
+    <div id="response"></div>
+
+    <div class="small">
+        No pressure. I just wanted to ask you properly.
+    </div>
+
+</div>
+
+<script>
+function sayYes() {
+    document.getElementById("response").style.display = "block";
+    document.getElementById("response").innerHTML =
+        "That made me smile. ♡<br><br>I'll take care of the rest.";
+}
+
+function sayMaybe() {
+    document.getElementById("response").style.display = "block";
+    document.getElementById("response").innerHTML =
+        "Of course. Take your time. ♡";
+}
+</script>
+
+</body>
+</html>
+Step 3
+
+After you've pasted it:
